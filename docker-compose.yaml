@@ -1,7 +1,7 @@
 services:
   minecraft-create:
     image: itzg/minecraft-server:java21
-    container_name: minecraft-create
+    container_name: minecraft-create-test
     restart: "no"
 
     ports:
