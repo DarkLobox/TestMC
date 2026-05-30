@@ -1,0 +1,27 @@
+services:
+  minecraft-create:
+    image: itzg/minecraft-server:java21
+    container_name: minecraft-create
+    restart: "no"
+
+    ports:
+      - "25565:25565"
+
+    environment:
+      EULA: "TRUE"
+      TYPE: "NEOFORGE"
+      VERSION: "1.21.1"
+
+      MEMORY: "6G"
+      MAX_PLAYERS: "10"
+      DIFFICULTY: "hard"
+      MODE: "survival"
+      PVP: "true"
+      ONLINE_MODE: "true"
+      MOTD: "Servidor Create"
+
+    volumes:
+      - ./data:/data
+
+    stdin_open: true
+    tty: true
