@@ -1,11 +1,11 @@
 services:
   minecraft-create:
     image: itzg/minecraft-server:java21
-    container_name: minecraft-create-test
+    container_name: minecraft-create-poro
     restart: "no"
 
     ports:
-      - "25566:25565"
+      - "25567:25565"
 
     environment:
       EULA: "TRUE"
